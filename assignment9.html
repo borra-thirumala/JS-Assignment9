@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+//voting eligibility
+//Scenario: determine if a person is eligible to vote
+//inputs:
+//age
+//citizenship:boolean
+//Outputs:can vote
+//Algorithm:1.Check if the age of the person is 18 or older.
+//2.Check if the person has citizenship.
+//3.If both conditions are true, print 'canvote'.
+//4.Otherwise, print 'cannot vote'
+var age = prompt("Enter age: ");
+var citizenship = prompt("Enter citizenship (Indian): ");
+if (age>18 && citizenship=="indian"){
+    alert("Person can vote")
+}
+else{
+    alert("Cannot vote")
+}
+//Question 2:Admission to a club
+//Scenario: Determine if a person can enter the club.
+//Inputs:
+//age
+//'hasInvitation'(boolean)
+//Outputs:'can enter club'
+//Algorithm: 1.Check if the age of the person is 21 or older.
+//2.Check if the person has an invitation.
+//3.If either condition true, print 'can enter club'
+//4.Otherwise,print 'cannotenterclub'
+//Example:
+//Input: age=20,'hasinvitation=true'
+//Output: 'can enter club'
+var age1 = prompt("Enter age: ");
+var hasinvitation = prompt("Do you have invitation?Enter boolean True/False: ");
+if(age1>21 || hasinvitation=="true"){
+    alert("can enter club")
+}
+else{
+    alert("cannot enter club")
+}
+
+//Question3:Discount Eligibility
+//Scenario: Determine if a person is eligible for a discount at a store.
+//Inputs: 'ismember' (boolean)
+//age
+//Outputs:'is eligible for discount'
+//Algorithm:1.Check if the person is a member
+//2.Check if the person is a senior (65 years old or older)
+//3.If either condition is true,print 'iseligiblefordiscount'
+//4.Otherwise, set 'isnoteligiblefordiscount'.
+//Example:
+//Input: 'ismember=false','age=70'
+//Output:'iseligiblefordiscount'
+var isMember = prompt("Are you a member?Enter boolean true/false: ");
+var age = 85;
+if(isMember=="true" || age>65){
+    console.log("Is eligible for discount")
+}
+else(
+    console.log("not eligible for discount")
+)
+
+
+//Question4:Scholarship eligibility
+//Scenario: Determine if a student is eligible for a scholarship
+//inputs
+//gpa
+//'extracurricular' (boolean)
+//'recommendation' (boolean)
+//Outputs:
+//is eligible for scholarship (boolean)
+//Algorithm:1.Check if the GPA of the student is 3.5 or higher.
+//2.Check if the student participates in the extracurricular activities.
+//3.Check if the student has a recommendation letter.
+//4.If the GPA is 3.5 or higher AND either participation in extracurricular activities or a recommendation letter is true, print 'iseligibleforscholarship'.
+//5.Otherwise,set 'isnoteligibleforscholarship'
+//Example: input: 'gap:3.6','extracurricular=true','recommedation=false'
+//Output: 'iseligibleforscholarship'
+var gpa = prompt("Enter GPA of student: ");
+var extracurricular = prompt("Did you participate in extracurricular activities: ")
+var recommendation = prompt("Do you have a recommendation letter: ")
+if (gpa>=3.5 && (extracurricular=="true" || recommendation=="true")){
+    alert("Is eligible for scholarship")
+}
+else{
+    alert("not eligible for scholarship")
+}
+    </script>
+</body>
+</html>
